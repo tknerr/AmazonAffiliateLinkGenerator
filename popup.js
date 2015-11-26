@@ -4,7 +4,7 @@ window.onload = function() {
         chrome.tabs.getSelected(null, function(tab) {
             var tablink = tab.url,
                 host = $.url(tablink).attr('host'),
-                link = 'http://' + host + '/dp/' + item + '/?tag='
+                link = 'http://' + host + '/dp/' + item + '/ref=nosim?tag='
                         + localStorage['trackId'];
             console.log(link);
             $('#txt').val(link);
